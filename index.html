@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>TRIVIA</h1>
+        
+    </header>
+    <section id="sectionLogin">
+        <h3>Ingresa tu nombre: </h3>
+        <input type="text" id="name">
+        <input type="button" id="btn1" onclick="myFunction()" value="Enviar">
+    </section>
+    <section>
+        <h2 id="nameUser"></h2>
+    </section>
+    <section id="sectionQuestion">
+        <h3>¿Lista para jugar?</h3>
+        <input type="button" id="btn2" value="Aceptar" onclick="aceptar()">
+        <input type="button" id="btn3" value="Cancelar" onclick="cancelar()">
+    </section>
+    <section>
+        <h3 id="cancel"></h3>
+    </section>
+    <section id="sectionQuiz">
+        <form id="quiz">
+            <h2>Preguntas</h2><br>
+            <strong>Una linea de código es</strong><br>
+            <input type="radio" id="answerOne" name="answerOne" value="Una sentencia"><label id="a1">Una sentencia</label> 
+            <input type="radio" id="answerOne2" name = "answerOne" value="Un programa" ><label id="a2">Un programa</label> <br>
+            <strong>HTML es un lenguaje de</strong><br>
+            <input type="radio" id="answerTwo" name="answerTwo" value="programación"><label id="a3">programación</label> 
+            <input type="radio" id="answerTwo2" name="answerTwo" value="marcado"><label id="a4">marcado</label> <br>
+            <strong>Qué tipo de dato es NaN</strong><br>
+            <input type="radio" id="answerThird" name="answerThird" value="undefiend"><label id="a5">undefiend</label> 
+            <input type="radio" id="answerThird2" name="answerThird" value="number"><label id="a6">number</label> <br>
+            <input type="button" id="eval" value="evaluar" onclick="evaluar()">      
+            
+            <h3 id="score"></h3>
+        </form>
+        
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
